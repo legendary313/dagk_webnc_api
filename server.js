@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const jwt = require('./helpers/jwt')
 const errorHandler = require('./helpers/error_handler');
-const http = require('http');
+var port = process.env.PORT || 8080;
 
 const boardRoutes = require('./routes/board');
 const columnRoutes = require('./routes/column');
@@ -39,6 +39,6 @@ mongoose.connect(
     console.log(err);
 });
 
-app.listen(3000, ()=>{console.log('localhost:4000');});
+app.listen(port, ()=>{console.log('localhost:4000');});
 
 //database: mongodb+srv://legendary313:<lightsaber313>@cluster0.lwyoq.mongodb.net/<dagk_webnc>?retryWrites=true&w=majority
