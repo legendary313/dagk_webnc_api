@@ -1,6 +1,6 @@
   
 const express = require('express');
-const ItemsController = require('../controllers/Item')
+const ItemsController = require('../controllers/item')
 
 // Router initialisation
 const router = express.Router();
