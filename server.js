@@ -39,6 +39,6 @@ mongoose.connect(
     console.log(err);
 });
 
-app.listen(port, ()=>{console.log('localhost:4000');});
+app.listen(port, ()=>{console.log('localhost:'+port);});
 
 //database: mongodb+srv://legendary313:<lightsaber313>@cluster0.lwyoq.mongodb.net/<dagk_webnc>?retryWrites=true&w=majority
